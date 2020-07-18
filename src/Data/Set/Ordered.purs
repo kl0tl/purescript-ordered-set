@@ -134,6 +134,8 @@ import Data.Argonaut.Decode (class DecodeJson)
 
 newtype OSet a = OSet (Array a)
 
+type role OSet nominal
+
 -- Functor OSet should not be implemented (see comment of map function below)
 
 instance eqSet :: Eq a => Eq (OSet a) where
